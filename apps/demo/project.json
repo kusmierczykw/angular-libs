@@ -2,7 +2,7 @@
   "name": "demo",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "angular-libs",
+  "prefix": "demo",
   "sourceRoot": "apps/demo/src",
   "tags": [],
   "targets": {
@@ -51,6 +51,9 @@
     },
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
+      "options": {
+        "host": "0.0.0.0"
+      },
       "configurations": {
         "production": {
           "buildTarget": "demo:build:production"

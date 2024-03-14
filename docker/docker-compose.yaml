@@ -1,0 +1,12 @@
+version: '3.8'
+name: angular-libs
+services:
+  angular:
+    tty: true
+    build:
+      context: ./angular
+    volumes:
+      - ../:/libs
+    ports:
+      - "4200:4200"
+
