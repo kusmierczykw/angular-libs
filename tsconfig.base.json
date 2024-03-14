@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-libs/icon": ["libs/icon/src/index.ts"]
+      "@angular-libs/icon": ["libs/icon/src/index.ts"],
+      "@angular-libs/nil": ["libs/nil/src/index.ts"],
+      "@angular-libs/router-link": ["libs/router-link/src/index.ts"],
+      "@angular-libs/rxjs": ["libs/rxjs/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
