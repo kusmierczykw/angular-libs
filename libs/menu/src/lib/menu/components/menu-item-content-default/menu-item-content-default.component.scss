@@ -1,0 +1,25 @@
+:host {
+  $padding: 0.5rem 1rem;
+  $border-radius: 0.24rem;
+
+  padding: $padding;
+  border-radius: $border-radius;
+
+  lib-icon {
+    $margin: 0.5rem;
+
+    margin-right: $margin;
+  }
+
+  span {
+    text-decoration: none;
+  }
+}
+
+:host-context(.link:hover) {
+  $background: white;
+  $color: black;
+
+  background-color: $background;
+  color: $color;
+}

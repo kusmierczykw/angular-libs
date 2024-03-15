@@ -1,0 +1,15 @@
+<button class="link" (click)="handleMoreClick()">
+  <ng-content></ng-content>
+</button>
+
+<div class="menu-item-more" [@openClose]="expanded ? 'open' : 'close'">
+  <ul>
+    <ng-container *ngFor="let item of item.children">
+      <li>
+        <lib-menu-item
+          [item]="item"
+          [contentTemplateRef]="contentTemplateRef" />
+      </li>
+    </ng-container>
+  </ul>
+</div>

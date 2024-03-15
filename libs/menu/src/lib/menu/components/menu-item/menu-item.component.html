@@ -1,0 +1,41 @@
+<ng-container [ngSwitch]="true">
+  <ng-container *ngSwitchCase="item.isRouterLink()">
+    <lib-menu-item-router-link [item]="item">
+      <ng-container [ngTemplateOutlet]="contentTemplate"></ng-container>
+    </lib-menu-item-router-link>
+  </ng-container>
+
+  <ng-container *ngSwitchCase="item.isLink()">
+    <lib-menu-item-link [item]="item">
+      <ng-container [ngTemplateOutlet]="contentTemplate"></ng-container>
+    </lib-menu-item-link>
+  </ng-container>
+
+  <ng-container *ngSwitchCase="item.isCommand()">
+    <lib-menu-item-command [item]="item">
+      <ng-container [ngTemplateOutlet]="contentTemplate"></ng-container>
+    </lib-menu-item-command>
+  </ng-container>
+
+  <ng-container *ngSwitchCase="item.isMore()">
+    <lib-menu-item-more
+      [item]="item"
+      [contentTemplateRef]="nestedContentTemplateRef"
+      (toggleExpansionEvent)="handleToggleExpansionEvent($event)">
+      <ng-container [ngTemplateOutlet]="contentTemplate"></ng-container>
+    </lib-menu-item-more>
+  </ng-container>
+</ng-container>
+
+<ng-template #contentTemplate>
+  <ng-container *ngIf="contentTemplateRef; else defaultContentTemplate">
+    <ng-container
+      [ngTemplateOutlet]="contentTemplateRef"
+      [ngTemplateOutletContext]="{ item: item, expanded: expanded }">
+    </ng-container>
+  </ng-container>
+</ng-template>
+
+<ng-template #defaultContentTemplate>
+  <lib-menu-item-content-default [item]="item" />
+</ng-template>

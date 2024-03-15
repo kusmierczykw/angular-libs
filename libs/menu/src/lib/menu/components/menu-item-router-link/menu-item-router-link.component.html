@@ -1,0 +1,8 @@
+<a
+  class="link"
+  routerLinkActive="active"
+  [queryParams]="valueOrNull(item.queryParams)"
+  [routerLinkActiveOptions]="item.routerLinkActiveOptions"
+  [routerLink]="item.routerLink!">
+  <ng-content></ng-content>
+</a>

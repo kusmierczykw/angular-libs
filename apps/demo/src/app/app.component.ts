@@ -2,10 +2,11 @@ import { Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Route, RouterLinkPipe } from '@angular-starter-pack/router-link';
 import { MenuItemBuilder } from '@angular-starter-pack/menu';
+import { MenuItemComponent } from '../../../../libs/menu/src/lib/menu/components/menu-item/menu-item.component';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, RouterLinkPipe],
+  imports: [RouterModule, RouterLinkPipe, MenuItemComponent],
   selector: 'demo-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

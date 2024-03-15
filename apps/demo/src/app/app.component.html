@@ -1,8 +1,6 @@
 <div>
-  @for (element of routes(); track element.label) {
-      @if (element.isRouterLink()) {
-          <a [routerLink]="element.routerLink!">{{ element.label }}</a>
-      }
+  @for (item of routes(); track item.label) {
+    <lib-menu-item [item]="item" />
   }
 </div>
 
