@@ -1,5 +1,7 @@
-export class IconEntryNotFoundException extends Error {
-  constructor(message = 'Icon entry not found.') {
+import { Exception } from '@angular-starter-pack/exception';
+
+export class IconEntryNotFoundException extends Exception {
+  public constructor(message = 'Icon entry not found.') {
     super(message);
   }
 }

@@ -1,8 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { RouterLinkProviderService } from '../providers/router-link-provider.service';
+import { RouterLinkProviderService } from '../../../index';
 import { Route } from '../enums/route';
-import { Nillable } from '@angular-libs/nil';
-import { RouterLinkParams } from '../types/router-link-params';
+import { Nillable } from '@angular-starter-pack/nil';
+import { RouterLinkParams } from '../../../index';
 import { RouterLink } from '../types/router-link';
 
 @Pipe({

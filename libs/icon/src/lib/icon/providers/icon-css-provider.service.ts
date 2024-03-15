@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Icon } from '../types/icon';
+import { Icon } from '../enums/icon';
 import { IconEntryNotFoundException } from '../exceptions/icon-entry-not-found.exception';
 
 @Injectable({
@@ -7,8 +7,8 @@ import { IconEntryNotFoundException } from '../exceptions/icon-entry-not-found.e
 })
 export class IconCssProviderService {
   private readonly entries = new Map<Icon, string>([
-    ['bi-x-lg', 'bi bi-x-lg'],
-    ['bi-text-paragraph', 'bi bi-text-paragraph'],
+    [Icon.X_LG, 'bi bi-x-lg'],
+    [Icon.TextParagraph, 'bi bi-text-paragraph'],
   ]);
 
   public getCss(icon: Icon): string {
@@ -18,6 +18,8 @@ export class IconCssProviderService {
       return result;
     }
 
-    throw new IconEntryNotFoundException(`Not found entry for "${icon}" name.`);
+    const name = Icon[icon];
+
+    throw new IconEntryNotFoundException(`Not found entry for "${name}" name.`);
   }
 }

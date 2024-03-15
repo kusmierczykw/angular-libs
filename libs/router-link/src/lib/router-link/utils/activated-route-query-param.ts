@@ -2,7 +2,7 @@ import { ActivatedRoute } from '@angular/router';
 import { map, Observable } from 'rxjs';
 import { inject } from '@angular/core';
 import { RouteQueryParam } from '../enums/route-query-param';
-import { isNil, Nillable } from '@angular-libs/nil';
+import { isNil, Nillable } from '@angular-starter-pack/nil';
 
 export const activatedRouteQueryParamAsString = (
   queryParam: RouteQueryParam,

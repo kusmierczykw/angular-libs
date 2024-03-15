@@ -1,5 +1,5 @@
-import { Nillable } from '@core/utils/nil/nil';
-import { isNil } from '@core/utils/nil/is-nil';
+import { Nillable } from './nillable';
+import { isNil } from './is-nil';
 
 export function isNotNil<Type>(
   predictable: Nillable<Type>,

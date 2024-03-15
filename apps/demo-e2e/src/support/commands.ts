@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+/// <reference enums="cypress" />
 
 // ***********************************************
 // This example commands.ts shows you how to

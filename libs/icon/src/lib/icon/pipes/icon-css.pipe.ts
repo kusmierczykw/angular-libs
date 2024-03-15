@@ -1,5 +1,5 @@
 import { inject, Pipe, PipeTransform } from '@angular/core';
-import { Icon } from '../types/icon';
+import { Icon } from '../enums/icon';
 import { IconCssProviderService } from '../providers/icon-css-provider.service';
 
 @Pipe({
@@ -9,7 +9,7 @@ import { IconCssProviderService } from '../providers/icon-css-provider.service';
 export class IconCssPipe implements PipeTransform {
   private readonly provider = inject(IconCssProviderService);
 
-  transform(icon: Icon): string {
+  public transform(icon: Icon): string {
     return this.provider.getCss(icon);
   }
 }

@@ -1,0 +1,9 @@
+{
+  "name": "image",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/image/src",
+  "prefix": "lib",
+  "tags": [],
+  "projectType": "library",
+  "targets": {}
+}

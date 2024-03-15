@@ -1,1 +1,9 @@
+<div>
+  @for (element of routes(); track element.label) {
+      @if (element.isRouterLink()) {
+          <a [routerLink]="element.routerLink!">{{ element.label }}</a>
+      }
+  }
+</div>
+
 <router-outlet />

@@ -1,3 +1,3 @@
-import { Nil } from '@core/utils/nil/nil';
+import { Nil } from './nil';
 
 export type Nillable<Type> = Type | Nil;

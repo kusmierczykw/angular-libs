@@ -2,7 +2,7 @@ import { map, Observable } from 'rxjs';
 import { inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RouteParam } from '../enums/route-param';
-import { isNil, Nillable } from '@angular-libs/nil';
+import { isNil, Nillable } from '@angular-starter-pack/nil';
 
 export const activatedRouteParamAsString = (
   param: RouteParam,

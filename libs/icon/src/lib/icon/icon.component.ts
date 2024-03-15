@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Icon } from './types/icon';
+import { Icon } from './enums/icon';
 import { IconCssPipe } from './pipes/icon-css.pipe';
 
 @Component({

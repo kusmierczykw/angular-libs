@@ -1,5 +1,5 @@
 version: '3.8'
-name: angular-libs
+name: angular-starter-pack
 services:
   angular:
     tty: true

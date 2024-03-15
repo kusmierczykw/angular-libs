@@ -2,10 +2,10 @@ import { Injectable } from '@angular/core';
 import { NavigationExtras, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { fromPromise } from 'rxjs/internal/observable/innerFrom';
-import { RouterLinkProviderService } from '../providers/router-link-provider.service';
-import { Nillable, valueOrUndefined } from '@angular-libs/nil';
+import { RouterLinkProviderService } from '../../../index';
+import { Nillable, valueOrUndefined } from '@angular-starter-pack/nil';
 import { RouterLink } from '../types/router-link';
-import { blank } from '@angular-libs/rxjs';
+import { blank } from '@angular-starter-pack/rxjs';
 
 @Injectable({
   providedIn: 'root',

@@ -15,10 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-libs/icon": ["libs/icon/src/index.ts"],
-      "@angular-libs/nil": ["libs/nil/src/index.ts"],
-      "@angular-libs/router-link": ["libs/router-link/src/index.ts"],
-      "@angular-libs/rxjs": ["libs/rxjs/src/index.ts"]
+      "@angular-starter-pack/exception": ["libs/exception/src/index.ts"],
+      "@angular-starter-pack/icon": ["libs/icon/src/index.ts"],
+      "@angular-starter-pack/image": ["libs/image/src/index.ts"],
+      "@angular-starter-pack/menu": ["libs/menu/src/index.ts"],
+      "@angular-starter-pack/nil": ["libs/nil/src/index.ts"],
+      "@angular-starter-pack/router-link": ["libs/router-link/src/index.ts"],
+      "@angular-starter-pack/rxjs": ["libs/rxjs/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
